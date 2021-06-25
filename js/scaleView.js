@@ -25,11 +25,12 @@ function scaleView(){
 
 function noteImgChanger(){
     let imgchanger = document.getElementById('notes');
-    imgchanger.value == 'fullChart' ? setImgAndWidth("./src/sax-fingering-chart-final.png",'"600vw"'):
+    imgchanger.value == 'fullChart' ? setImgAndWidth("./src/sax-fingering-chart-final.png", "600vw"):
     imgchanger.value == 'A#-Bb' ? setImgAndWidth("./src/LowAsh-Bb-Finger.png", "140vw"):
+    imgchanger.value == 'B-Cb' ? setImgAndWidth("./src/LowB-Cb-Finger.png", "140vw"):
     imgchanger.value == 'B#-C' ? setImgAndWidth("./src/LowBsh-C-Finger.png", "140vw"):
-    imgchanger.value == 'C#-Db' ? setImgAndWidth("./src/LowB-Cb-Finger.png","140vw"):
-    imgchanger.value == 'D' ? setImgAndWidth("./src/LowD-Finger.png","140vw"):
+    imgchanger.value == 'C#-Db' ? setImgAndWidth("./src/LowCsh-Db-Finger.png", "140vw"):
+    imgchanger.value == 'D' ? setImgAndWidth("./src/LowD-Finger.png", "140vw"):
     console.log('noteImgChanger not workie');
 
     scaleView();
