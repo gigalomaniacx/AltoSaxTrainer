@@ -11,6 +11,8 @@
     <script src="js/controller.js"></script>
     <script src="js/scaleView.js"></script>
     <script src="js/scaleController.js"></script>
+    <script src="js/timerController.js"></script>
+    <script src="js/timerView.js"></script>
 </head>
 <body>
     <div id="app"></div>
@@ -20,6 +22,7 @@
         function updateView(){
             if(model.currentView == 'mainPage') mainPageView();
             if(model.currentView == 'scalePage') scaleView();
+            if(model.currentView == 'timerPage') timerView();
         }
     </script>
 </body>
