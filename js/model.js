@@ -152,8 +152,15 @@ const model = {
          size: '140vw'
         },
      ],
-     
+
      inputs : {
            dropDownOption: 'fullChart', 
       },
+      timer: {
+         timerOn: false,
+         starttime: null,
+         endtime: null,
+         spentmilisec: null,
+         spentsec: 0,
+      }
 }
