@@ -12,6 +12,7 @@ function scaleView(){
         </select><br/>
         <img src="${model.noteImg}" width="${model.noteImgWidth}" />
         <button onclick="mainPageView()">main page</button>
+        <button onclick="timerView()">Timer</button>
     `;
 }
 
