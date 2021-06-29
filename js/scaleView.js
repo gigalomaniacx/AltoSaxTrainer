@@ -1,3 +1,4 @@
+// Draws the page
 function scaleView(){
     let dropDown ='';
     for (let i = 0; i < model.notes.length; i++){
@@ -14,12 +15,3 @@ function scaleView(){
     `;
 }
 
-function noteImgChanger(val){
-    let imgchanger = document.getElementById('notes');
-    for (let i = 0; i < model.fingerchart.length; i++){
-        if (imgchanger.value == model.fingerchart[i].name)  setImgAndWidth(model.fingerchart[i].noteImg,model.fingerchart[i].size);
-        
-    }
-    setDropdownOption(val);
-    scaleView();
-}
