@@ -16,3 +16,8 @@ function scaleView(){
     `;
 }
 
+
+// Prints the options in the dropdown menu
+function dropDownOptions(value){
+    return `<option ${getSelectedDropdown(value)} value="${value}">${value}</option>`;
+    }

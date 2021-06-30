@@ -4,11 +4,6 @@ function setImgAndWidth(imgSrc,imgWidth){
     model.noteImgWidth = imgWidth;
 }
 
-// Prints the options in the dropdown menu
-function dropDownOptions(value){
-return `<option ${getSelectedDropdown(value)} value="${value}">${value}</option>`;
-}
-
 // Sets the dropdownOption to the current note with some help
 function setDropdownOption (val) {
     return model.inputs.dropDownOption = val;
