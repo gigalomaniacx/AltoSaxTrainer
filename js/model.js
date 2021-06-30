@@ -8,7 +8,8 @@ const model = {
         'fullChart', 'LowA#-Bb', 'LowB-Cb', 'LowB#-C', 'LowC#-Db', 'LowD','LowD#-Eb', 'LowE-Fb',
         'LowE#-F', 'LowF#-Gb', 'LowG', 'LowG#-Ab', 'LowA', 'A#', 'Bb',
         'B-Cb', 'B#', 'C', 'C#-Db', 'HighD', 'HighD#-Eb', 'HighE-Fb',
-        'HighE#-F', 'HighF#', 'HighGb', 'HighG', 'HighG#-Ab', 'HighA',
+        'HighE#-F', 'HighF#', 'HighGb', 'HighG', 'HighG#-Ab', 'HighA', 'HighA#', 'HighB-Cb', 'HighB#', 'HighC','HighC#-Db',
+        'HigherD', 'HigherD#-Eb', 'HigherE-Fb', 'HigherE#', 'HigherF',
      ],
      fingerchart : [
         {
@@ -103,7 +104,7 @@ const model = {
         },
         {
          name: 'C#-Db',
-         noteImg: "./src/CshDb-Finger.png",
+         noteImg: "./src/Csh-Db-Finger.png",
          size: '140vw'
         },
         {
@@ -151,7 +152,58 @@ const model = {
          noteImg: "./src/HighA-Finger.png",
          size: '140vw'
         },
-     ],
+        {
+         name: 'HighA#',
+         noteImg: "./src/HighAsh-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HighB-Cb',
+         noteImg: "./src/HighB-Cb-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HighBsh',
+         noteImg: "./src/HighBsh-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HighC',
+         noteImg: "./src/HighC-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HighC#-Db',
+         noteImg: "./src/HighCsh-Db-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HigherD',
+         noteImg: "./src/HigherD-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HigherD#-Eb',
+         noteImg: "./src/HigherDsh-Eb-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HigherE-Fb',
+         noteImg: "./src/HigherE-Fb-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HigherE#',
+         noteImg: "./src/HigherEsh-Finger.png",
+         size: '140vw'
+        },
+        {
+         name: 'HigherF',
+         noteImg: "./src/HigherF-Finger.png",
+         size: '140vw'
+        },
+
+     ] /*39*/,
 
      inputs : {
            dropDownOption: 'fullChart', 
