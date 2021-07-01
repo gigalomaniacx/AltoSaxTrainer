@@ -202,10 +202,10 @@ const model = {
            dropDownOption: 'fullChart', 
       },
       timer: {
-         timerOn: false,
-         starttime: null,
-         endtime: null,
-         spentmilisec: null,
-         spentsec: 0,
+         timerOn: -1,
+         time: 0,
+         timerButton: 'start',
+         timerButtonId: document.querySelector('#timer-start'),
+
       }
 }

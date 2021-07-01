@@ -1,25 +1,22 @@
 function startTimer(){
-    startsTime();
-    do {
-        stopsTime();
-        timer();
-        timerView();
+    if(model.timer.timerOn == -1){
+        model.timer.timerOn = setInterval(function(){
+            model.timer.time++;
+            model.timer.timerButton = 'stop';
+            timerView();
+        }, 1000);
+    } else {
+        clearInterval(model.timer.timerOn);
+        model.timer.timerOn = -1;
+        model.timer.timerButton = 'start';
     }
-    while (model.timer.timerOn)
 }
-function startsTime(){
-    return model.timer.starttime = new Date().getTime();
-}
-function stopsTime(){
-    return model.timer.endtime = new Date().getTime();
-}
-function timer(){
-    getSpentMiliSec();
-    getSpentSec();
-}
-function getSpentMiliSec(){
-    return model.timer.spentmillisec = Math.floor(model.timer.endtime - model.timer.starttime);
-}
-function getSpentSec(){
-    return model.timer.spentsec = model.timer.spentmillisec / 1000;
+
+if (model.timer.timerButtonId){
+    model.timer.timerButtonId.addEventListener('keyup', e => {
+        if (e.keyCode == 32){
+            startTimer();
+            // e.preventDefault();
+        }
+    })
 }
