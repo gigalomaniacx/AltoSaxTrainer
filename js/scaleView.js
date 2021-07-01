@@ -1,8 +1,8 @@
 // Draws the page
 function scaleView(){
     let dropDown ='';
-    for (let i = 0; i < model.notes.length; i++){
-    dropDown += dropDownOptions(model.notes[i]);
+    for (let i = 0; i < model.fingerchart.length; i++){
+    dropDown += dropDownOptions(model.fingerchart[i].name);
     }
 
     document.getElementById('app').innerHTML =  /*html*/ `
