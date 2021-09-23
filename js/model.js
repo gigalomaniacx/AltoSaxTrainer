@@ -8,6 +8,11 @@ const model = {
 
    fingerchart: [
       {
+         name: 'none',
+         noteImg: '',
+         size: '',
+      },
+      {
          name: 'fullChart',
          noteImg: "./src/sax-fingering-chart-final.png",
          size: "600vw"
