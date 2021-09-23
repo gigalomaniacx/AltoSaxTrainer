@@ -1,4 +1,7 @@
-function startTimer(){
+function startTimer(e){
+    if(e instanceof KeyboardEvent){
+        console.log(e);
+    }
     if(model.timer.timerOn == -1){
         model.timer.timerOn = setInterval(function(){
             model.timer.time++;
@@ -12,11 +15,10 @@ function startTimer(){
     }
 }
 
-if (model.timer.timerButtonId){
-    model.timer.timerButtonId.addEventListener('keyup', e => {
-        if (e.keyCode == 32){
-            startTimer();
-            // e.preventDefault();
-        }
-    })
+function stopKey(e){
+    model.timer.timerButtonId.addEventListener(`#timer-Start[data-key="${e.keyCode}"]`)
+}
+
+function makeListener(){
+    window.addEventListener("keydown", stopKey);
 }
